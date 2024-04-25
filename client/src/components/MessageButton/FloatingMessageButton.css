@@ -1,0 +1,49 @@
+:root {
+  --button-color: #fff;
+  --button-padding: 10px 20px;
+
+  --content-width: 500px;
+  --content-height: 450px;
+}
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.floating-message-button {
+  transition: width 0.3s ease;
+}
+
+.message-content {
+  transition: margin-top 0.3s ease;
+}
+
+
+
+.p-10 {
+  padding: 10px;
+}
+
+.floating-message-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.floating-message-button.open {
+  width: 500px; /* Adjust the width as needed */
+}
+
+.message-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #ffffff; */
+  color: #333;
+}
